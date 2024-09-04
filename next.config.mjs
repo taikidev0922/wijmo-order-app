@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   webpack: (config, { isServer }) => {
     // クライアントのwebpack設定のみを変更
     if (!isServer) {
