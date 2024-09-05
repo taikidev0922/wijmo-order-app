@@ -13,6 +13,7 @@ jobs:
         with:
           node-version: "18" # プロジェクトで使用しているNode.jsのバージョン
       - name: Install dependencies
+        run: npm install
         run: npm ci
       - name: Build
         run: npm run build
